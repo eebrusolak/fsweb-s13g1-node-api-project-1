@@ -14,14 +14,16 @@
     "cross-env": "^7.0.3",
     "eslint": "^8.15.0",
     "jest": "^28.1.0",
-    "supertest": "^6.2.3",
-    "jest-ctrf-json-reporter": "^0.0.9"
+    "jest-ctrf-json-reporter": "^0.0.9",
+    "supertest": "^6.2.3"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Workintech/fsweb-s13g1-node-api-project-1.git"
   },
   "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
     "nanoid": "^3.3.4"
   }
 }
