@@ -12,20 +12,16 @@ server.get("/", (req, res) => {
     res.status(200).send("Server is running");
 });
 
-
-// ✅ GET ALL USERS
 server.get('/api/users', (req, res) => {
     Users.find()
         .then(users => {
             res.status(200).send(users);
         })
-        .catch(() => { // 🔥 try-catch yerine .catch kullandık
+        .catch(() => {
             res.status(500).send({ message: "Kullanıcı bilgileri alınamadı" });
         });
 });
 
-
-// ✅ POST USER
 server.post('/api/users', (req, res) => {
     if (!req.body.name || !req.body.bio) {
         return res.status(400).send({ message: "Lütfen kullanıcı için bir name ve bio sağlayın" });
@@ -33,32 +29,28 @@ server.post('/api/users', (req, res) => {
 
     Users.insert(req.body)
         .then(user => {
-            res.status(201).send(user); // 🔥 200 → 201 yaptık
+            res.status(201).send(user);
         })
         .catch(() => {
             res.status(500).send({ message: "Veritabanına kaydedilirken bir hata oluştu." });
         });
 });
 
-
-// ✅ GET USER BY ID
 server.get('/api/users/:id', (req, res) => {
     Users.findById(req.params.id)
         .then(user => {
             if (!user) {
                 return res.status(404).send({ message: "Belirtilen ID'li kullanıcı bulunamadı" });
             }
-            res.status(200).send(user); // 🔥 eksikti, ekledik
+            res.status(200).send(user);
         })
         .catch(() => {
             res.status(500).send({ message: "Kullanıcı bilgisi alınamadı" });
         });
 });
 
-
-// ✅ DELETE USER
 server.delete('/api/users/:id', (req, res) => {
-    Users.remove(req.params.id) // 🔥 paramd → params düzeltildi
+    Users.remove(req.params.id)
         .then(deletedUser => {
             if (!deletedUser) {
                 return res.status(404).send({ message: "Belirtilen ID'li kullanıcı bulunamadı" });
@@ -70,24 +62,21 @@ server.delete('/api/users/:id', (req, res) => {
         });
 });
 
-
-// ✅ UPDATE USER
 server.put('/api/users/:id', (req, res) => {
     if (!req.body.name || !req.body.bio) {
-        return res.status(400).send({ message: "Lütfen kullanıcı için name ve bio sağlayın" }); // 🔥 mesaj düzeltildi
+        return res.status(400).send({ message: "Lütfen kullanıcı için name ve bio sağlayın" });
     }
 
     Users.update(req.params.id, req.body)
         .then(updatedUser => {
             if (!updatedUser) {
-                return res.status(404).send({ message: "Belirtilen ID'li kullanıcı bulunamadı" }); // 🔥 400 → 404
+                return res.status(404).send({ message: "Belirtilen ID'li kullanıcı bulunamadı" });
             }
-            res.status(200).send(updatedUser); // 🔥 scope hatası düzeltildi
+            res.status(200).send(updatedUser);
         })
         .catch(() => {
             res.status(500).send({ message: "Kullanıcı bilgileri güncellenemedi" });
         });
 });
-
 
 module.exports = server;
