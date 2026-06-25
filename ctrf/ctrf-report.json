@@ -10,8 +10,8 @@
       "pending": 0,
       "skipped": 0,
       "other": 0,
-      "start": 1782380193067,
-      "stop": 1782380196752
+      "start": 1782380545670,
+      "stop": 1782380547051
     },
     "tests": [
       {
@@ -27,7 +27,7 @@
       },
       {
         "name": "server.js kullanıcı uçnoktası [POST] /api/users [1] yeni kullanıcıyla cevap veriyor",
-        "duration": 65,
+        "duration": 60,
         "status": "passed",
         "rawStatus": "passed",
         "type": "unit",
@@ -49,7 +49,7 @@
       },
       {
         "name": "server.js kullanıcı uçnoktası [POST] /api/users [3] doğru HTTP durum kodu dönüyor",
-        "duration": 4,
+        "duration": 6,
         "status": "passed",
         "rawStatus": "passed",
         "type": "unit",
@@ -60,7 +60,7 @@
       },
       {
         "name": "server.js kullanıcı uçnoktası [POST] /api/users [4] doğr durum kodu ve doğrulama mesajını içeriyor",
-        "duration": 11,
+        "duration": 15,
         "status": "passed",
         "rawStatus": "passed",
         "type": "unit",
@@ -71,7 +71,7 @@
       },
       {
         "name": "server.js kullanıcı uçnoktası [GET] /api/users [5] tüm kullanıcıları alabiliyor",
-        "duration": 5,
+        "duration": 4,
         "status": "passed",
         "rawStatus": "passed",
         "type": "unit",
@@ -82,7 +82,7 @@
       },
       {
         "name": "server.js kullanıcı uçnoktası [GET] /api/users [6] doğru kullanıcıları alabiliyor",
-        "duration": 5,
+        "duration": 3,
         "status": "passed",
         "rawStatus": "passed",
         "type": "unit",
@@ -115,7 +115,7 @@
       },
       {
         "name": "server.js kullanıcı uçnoktası [DELETE] /api/users/:id [9] silinen kullanıcıyı döndürüyor",
-        "duration": 4,
+        "duration": 6,
         "status": "passed",
         "rawStatus": "passed",
         "type": "unit",
@@ -126,7 +126,7 @@
       },
       {
         "name": "server.js kullanıcı uçnoktası [DELETE] /api/users/:id [10] deletes the user from the db",
-        "duration": 5,
+        "duration": 4,
         "status": "passed",
         "rawStatus": "passed",
         "type": "unit",
@@ -137,7 +137,7 @@
       },
       {
         "name": "server.js kullanıcı uçnoktası [DELETE] /api/users/:id [11] doğru mesaj ve durum koduyla yanıtlanıyor",
-        "duration": 4,
+        "duration": 6,
         "status": "passed",
         "rawStatus": "passed",
         "type": "unit",
@@ -148,7 +148,7 @@
       },
       {
         "name": "server.js kullanıcı uçnoktası [PUT] /api/users/:id [12] güncellenen kullanıcı dönüyor",
-        "duration": 5,
+        "duration": 7,
         "status": "passed",
         "rawStatus": "passed",
         "type": "unit",
@@ -159,7 +159,7 @@
       },
       {
         "name": "server.js kullanıcı uçnoktası [PUT] /api/users/:id [13] güncellenen kullanıcı vt ye kaydediliyor",
-        "duration": 4,
+        "duration": 5,
         "status": "passed",
         "rawStatus": "passed",
         "type": "unit",
@@ -170,7 +170,7 @@
       },
       {
         "name": "server.js kullanıcı uçnoktası [PUT] /api/users/:id [14] yanlış id de doğru durum kodu ve hata mesajı",
-        "duration": 4,
+        "duration": 7,
         "status": "passed",
         "rawStatus": "passed",
         "type": "unit",
@@ -181,7 +181,7 @@
       },
       {
         "name": "server.js kullanıcı uçnoktası [PUT] /api/users/:id [15] doğru durum kodu ve doğrulama hatası mesajı",
-        "duration": 10,
+        "duration": 14,
         "status": "passed",
         "rawStatus": "passed",
         "type": "unit",
