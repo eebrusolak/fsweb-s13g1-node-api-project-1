@@ -10,13 +10,13 @@
       "pending": 0,
       "skipped": 0,
       "other": 0,
-      "start": 1782380545670,
-      "stop": 1782380547051
+      "start": 1782381115024,
+      "stop": 1782381116286
     },
     "tests": [
       {
         "name": "[0] sanity check",
-        "duration": 2,
+        "duration": 1,
         "status": "passed",
         "rawStatus": "passed",
         "type": "unit",
@@ -27,7 +27,7 @@
       },
       {
         "name": "server.js kullanıcı uçnoktası [POST] /api/users [1] yeni kullanıcıyla cevap veriyor",
-        "duration": 60,
+        "duration": 54,
         "status": "passed",
         "rawStatus": "passed",
         "type": "unit",
@@ -49,7 +49,7 @@
       },
       {
         "name": "server.js kullanıcı uçnoktası [POST] /api/users [3] doğru HTTP durum kodu dönüyor",
-        "duration": 6,
+        "duration": 4,
         "status": "passed",
         "rawStatus": "passed",
         "type": "unit",
@@ -71,7 +71,7 @@
       },
       {
         "name": "server.js kullanıcı uçnoktası [GET] /api/users [5] tüm kullanıcıları alabiliyor",
-        "duration": 4,
+        "duration": 5,
         "status": "passed",
         "rawStatus": "passed",
         "type": "unit",
@@ -82,7 +82,7 @@
       },
       {
         "name": "server.js kullanıcı uçnoktası [GET] /api/users [6] doğru kullanıcıları alabiliyor",
-        "duration": 3,
+        "duration": 4,
         "status": "passed",
         "rawStatus": "passed",
         "type": "unit",
@@ -93,7 +93,7 @@
       },
       {
         "name": "server.js kullanıcı uçnoktası [GET] /api/users/:id [7] doğru kullanıcıyla cevap veriyor",
-        "duration": 8,
+        "duration": 10,
         "status": "passed",
         "rawStatus": "passed",
         "type": "unit",
@@ -104,7 +104,7 @@
       },
       {
         "name": "server.js kullanıcı uçnoktası [GET] /api/users/:id [8] yanlış idde doğru hata mesajı ve durum kodu dönüyor",
-        "duration": 4,
+        "duration": 5,
         "status": "passed",
         "rawStatus": "passed",
         "type": "unit",
@@ -115,17 +115,6 @@
       },
       {
         "name": "server.js kullanıcı uçnoktası [DELETE] /api/users/:id [9] silinen kullanıcıyı döndürüyor",
-        "duration": 6,
-        "status": "passed",
-        "rawStatus": "passed",
-        "type": "unit",
-        "filePath": "C:\\Users\\ebrus\\OneDrive\\Desktop\\My Repos\\fsweb-s13g1-node-api-project-1\\codegrade_mvp.test.js",
-        "retries": 0,
-        "flaky": false,
-        "suite": "C:\\Users\\ebrus\\OneDrive\\Desktop\\My Repos\\fsweb-s13g1-node-api-project-1\\codegrade_mvp.test.js > server.js > kullanıcı uçnoktası > [DELETE] /api/users/:id"
-      },
-      {
-        "name": "server.js kullanıcı uçnoktası [DELETE] /api/users/:id [10] deletes the user from the db",
         "duration": 4,
         "status": "passed",
         "rawStatus": "passed",
@@ -136,8 +125,19 @@
         "suite": "C:\\Users\\ebrus\\OneDrive\\Desktop\\My Repos\\fsweb-s13g1-node-api-project-1\\codegrade_mvp.test.js > server.js > kullanıcı uçnoktası > [DELETE] /api/users/:id"
       },
       {
+        "name": "server.js kullanıcı uçnoktası [DELETE] /api/users/:id [10] deletes the user from the db",
+        "duration": 5,
+        "status": "passed",
+        "rawStatus": "passed",
+        "type": "unit",
+        "filePath": "C:\\Users\\ebrus\\OneDrive\\Desktop\\My Repos\\fsweb-s13g1-node-api-project-1\\codegrade_mvp.test.js",
+        "retries": 0,
+        "flaky": false,
+        "suite": "C:\\Users\\ebrus\\OneDrive\\Desktop\\My Repos\\fsweb-s13g1-node-api-project-1\\codegrade_mvp.test.js > server.js > kullanıcı uçnoktası > [DELETE] /api/users/:id"
+      },
+      {
         "name": "server.js kullanıcı uçnoktası [DELETE] /api/users/:id [11] doğru mesaj ve durum koduyla yanıtlanıyor",
-        "duration": 6,
+        "duration": 5,
         "status": "passed",
         "rawStatus": "passed",
         "type": "unit",
@@ -148,7 +148,7 @@
       },
       {
         "name": "server.js kullanıcı uçnoktası [PUT] /api/users/:id [12] güncellenen kullanıcı dönüyor",
-        "duration": 7,
+        "duration": 6,
         "status": "passed",
         "rawStatus": "passed",
         "type": "unit",
@@ -170,7 +170,7 @@
       },
       {
         "name": "server.js kullanıcı uçnoktası [PUT] /api/users/:id [14] yanlış id de doğru durum kodu ve hata mesajı",
-        "duration": 7,
+        "duration": 4,
         "status": "passed",
         "rawStatus": "passed",
         "type": "unit",
@@ -181,7 +181,7 @@
       },
       {
         "name": "server.js kullanıcı uçnoktası [PUT] /api/users/:id [15] doğru durum kodu ve doğrulama hatası mesajı",
-        "duration": 14,
+        "duration": 10,
         "status": "passed",
         "rawStatus": "passed",
         "type": "unit",
